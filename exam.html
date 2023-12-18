@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الامتحان  </title>
+        <link rel="stylesheet" href="css/exam.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+
+
+    </head>
+    
+    <body>
+        <header><iframe src="navbar.html" width="100%" height="" frameborder="0"></iframe></header>
+        <div id="wrapper">
+        <nav>
+        <ul>
+            <li id="about">معلومات عنا</li>
+            <li><a href="contact .html" class="mail">تواصل معنا</a></li>
+        </ul>
+        </nav>
+            <div id="form-box">
+                <form>
+                    <select id="language">
+                    <option  value="HTML"selected="selected">الوسائط المتعددة</option>
+                    <option value="CSS">ادراة بيانات المشروع</option>
+                    <option value="JS">الموضوعات الالكترونية</option>
+                    <option value="PY">  تجميع بيانات المشروع</option>
+                    <option value="C"> معالجة وتصميم الصور</option>
+                    </select> 
+                    <a href="#lb3" class="choose-lang">ابدا الامتحان</a>
+                    </form>
+            </div>    
+        </div>
+        
+        <div class="quiz">
+            
+            <div id="info">
+                <div id="score">الدرجة: 0</div>
+                <div id="ques-left">الاسئلة:1/20</div>
+            </div>
+            <div id="ques-view">
+               
+            </div>
+            <div class="question">
+            <h1>Question</h1>
+            </div>
+            
+            <div class="choice">
+                <div class="options"><input type="radio" name="options" value="option1" id="opt0"><label for="opt0" id="lb0">Option1</label></div>
+                <div class="options"><input type="radio" name="options" value="option2" id="opt1"><label for="opt1" id="lb1">Option2</label></div>
+                <div class="options"><input type="radio" name="options" value="option3" checked="checked" id="opt2"><label for="opt2" id="lb2">Option3</label></div>
+                <div class="options"><input type="radio" name="options" value="option4" id="opt3"><label for="opt3" id="lb3">Option4</label></div>   
+            </div>
+
+             <div class="ans-btn">
+                <button type="button" class="submit-answer">ارسال الاجابة</button>
+                 <a href="#display-final-score" type="button" class="view-results">عرض النتجية</a>
+            </div>
+        
+        </div>
+        
+        <div class="final-result">
+            <h1>The Quiz is Over</h1>
+            <div class="solved-ques-no">You Solved 10 questions of HTML</div>
+            <div class="right-wrong">3 Were Right and 4 were Wrong</div>
+            <div id="display-final-score">Your Final Score is: 35</div>
+            <div class="remark">Remark: Satisfactory, Keep trying.</div>
+            <button id="restart">اعادة الامتحان</button>        
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <footer>
+            <iframe src="footer.html" width="100%" height="" frameborder="0"></iframe>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <iframe src="navbar.html" width="100%" height="" frameborder="0"></iframe>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرر الدراسي</title>
+</head>
+
+<style>
+    .main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.showcase h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 15px;
+}
+
+.c1 {
+    margin-right: 30px;
+    text-align: center;
+}
+
+#cources {
+    display: flex;
+    justify-content: center;
+}
+
+.c1 img {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: auto;
+}
+
+.btn {
+    margin-top: 4%;
+    background-color: rgb(80, 203, 255);
+    color: #111a23;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-out 0s;
+    -webkit-transition: 0.3s ease-out 0s;
+    -moz-transition: 0.3s ease-out 0s;
+    -ms-transition: 0.3s ease-out 0s;
+    -o-transition: 0.3s ease-out 0s;
+}
+/* تحديث التنسيق لتأكيد الاستمرارية */
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+
+#main-content article {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.phote {
+    width: 900px;
+    height: 300px;
+    /* height: 200px; */
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+    top: 15;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/***********************/
+
+.showcase h1 {
+    text-align: center;
+    font-size: 36px;
+    border-bottom: 5px solid rgb(80, 203, 255);
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    max-width: 100%;
+}
+
+
+/************************/
+
+@media(max-width: 1075px){
+    .showcase #cources{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 800px){
+    #main-content{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    #main-content article{
+        margin: auto;
+        text-align: center;
+    }
+
+    .phote{
+        width: 100%;
+        margin: auto;
+    }
+}
+</style>
+<body>
+    <div class="showcase">
+        <h1>الموضوعات الدراسية</h1>
+        <div id="cources">
+            <div class="c1">
+                <h3>
+                    <span lang="ar"> الدرس الخامس :- معالجة وتصميم الصور    </span>
+                </h3>
+                <img src="images/lesson5.avif" alt="الدرس الرابع">
+                <p>التعامل مع الصور من خلال بعض برامج تحرير ومعالجة الصور</p>
+                <a href="lesson5.html"><button class="btn"> تعلم الان</button></a>
+            </div>
+            <div class="c1">
+                <h3>
+                    <span lang="ar"> الدرس الرابع :- تجميع بيانات المشروع </span>
+                </h3>
+                <img src="images/lesson4.jpg" alt="الدرس الرابع">
+                <p>انشاء قاعدة بيانات باستخدام الجدوال الالكترونية</p>
+                <a href="lesson4.html"><button class="btn"> تعلم الان</button></a>
+            </div>
+            
+            <div class="c1">
+                <h3>
+                    <span lang="ar"> الدرس الثالث :- الموضوعات الالكترونية</span>
+                </h3>
+                <img src="images/lesson3.jpg" alt="الدرس الثالث">
+                <p> التعامل مع الانترنت والموضوعات من خلال نظام التشغيل</p>
+                <a href="lesson3.html"><button class="btn"> تعلم الان</button></a>
+            </div>
+            <div class="c1">
+                <h3>
+                    <span lang="ar"> الدرس الثاني :- ادراة بيانات المشروع</span>
+                </h3>
+                <img src="images/lesson2.jpg" alt="الدرس الثاني">
+                <p> التعامل مع الانترنت من خلال نظام التشغيل</p>
+                <a href="lesson2.html"><button class="btn"> تعلم الان</button></a>
+            
+            </div>
+            <div class="c1">
+                <h3>
+                    <span lang="en">Multimedia</span>
+                    <span lang="ar"> الدرس الاول :- الوسائط المتعددة</span>
+                </h3>
+                <img src="images/lesson1.jpg" width="50%" alt="الدرس الاول">
+                <p> استخدام خطوات اسلوب حل المشكلات فى انشاء "اطلس عربي الكتروني"</p>
+                <a href="lesson1.html"><button class="btn"> تعلم الان</button></a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; Copy Right 2023 Alaa Fares &reg; Team</p>
+        </footer>
+</body>
+</html>
